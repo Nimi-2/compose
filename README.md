@@ -13,7 +13,7 @@ Nazwe proszę zastąpić jedną z opcji:<br>
  Do zatrzymania composa użytko komendy:
  - docker compose stop <br>
  <h2>Uwagi</h2>
- Niestety nie udało mi się pokazać, że wszystko działa, możliwe błędy:
+ Niestety nie udało mi się pokazać, że wszystko działa, możliwe błędy: <br>
  - przeglądarka blokuje dostęp <br>
  - praca na systemie windows gdzie php-fpm nie jest obsługiwany<br>
  W tym pukncie próbowano użyć rozwiązania z pkt 16 ze strony: https://www.php.net/manual/en/install.fpm.php <br>
