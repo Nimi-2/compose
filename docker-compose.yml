@@ -15,6 +15,8 @@ services:
     build:
       context: ./php
     container_name: php
+    ports:
+      - 9000:9000
     volumes:
       - ./php/www:/var/www/html
     networks:
@@ -40,7 +42,7 @@ services:
       dockerfile: Dockerfile   
     container_name: nginx
     ports:
-      - 6666:80
+      - 9510:80
     networks:
       - backend
       - frontend
