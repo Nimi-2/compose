@@ -1,2 +1,2 @@
-<h2> compose</h2>
- <h1>Całość została wykonana na systemie Windows</h1>
+<h1> compose</h1>
+ <h2>Całość została wykonana na systemie Windows</h2>
