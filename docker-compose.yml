@@ -1,0 +1,43 @@
+version: "3.2"
+
+services:
+  mysql:
+    build:
+      context: ./mysql
+    container_name: mysql
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=my_strong_password
+  php:
+    build:
+      context: ./php
+    container_name: php
+    volumes:
+      - ./php/www:/var/www/html
+    networks:
+      - backend
+
+  phpmyadmin:
+    build:
+      context: ./phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - 6001:80
+    networks:
+      - backend
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile   
+    container_name: nginx
+    ports:
+      - 6666:80
+    networks:
+      - backend
+      - frontend
+
+networks:
+  backend:
+  frontend:
