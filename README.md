@@ -4,7 +4,7 @@ Użyte komendy:<br>
 - docker compose up -d --build<br>
 - docker compose ps -a<br>
 Dla sprawdzenia poszczególnych elementów zostały sprawdzone logi:<br>
-- docker compose logs <nazwa><br>
+- docker compose logs nazwa<br>
 Nazwe proszę zastąpić jedną z opcji:<br>
  - php<br>
  - phpmyadmin <br>
