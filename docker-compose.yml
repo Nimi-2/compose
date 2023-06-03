@@ -43,6 +43,7 @@ services:
     container_name: nginx
     ports:
       - 9510:80
+    restart: unless-stopped
     networks:
       - backend
       - frontend
