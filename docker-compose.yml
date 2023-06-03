@@ -5,6 +5,8 @@ services:
     build:
       context: ./mysql
     container_name: mysql
+    ports:
+      - 3308:3306
     networks:
       - backend
     environment:
@@ -22,6 +24,11 @@ services:
     build:
       context: ./phpmyadmin
     container_name: phpmyadmin
+    depends_on:
+      - mysql
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
     ports:
       - 6001:80
     networks:
